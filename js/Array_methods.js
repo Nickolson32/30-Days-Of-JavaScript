@@ -178,13 +178,43 @@
 
 // console.log(getNamesSortedByFriendCount);
 
-const students = ["Эдуард", "Вика", "Андрей", "Олег", "Юля", "Борис", "Катя"];
-console.log(students);
+// const students = ["Эдуард", "Вика", "Андрей", "Олег", "Юля", "Борис", "Катя"];
+// console.log(students);
 
 // const inAlphabetOrder = [...students].sort((a, b) => a.localeCompare(b));
 // console.log(inAlphabetOrder); // ['Андрей', 'Борис', 'Вика', 'Катя', 'Олег', 'Юля']
 
 // const inReversedOrder = [...students].sort((a, b) => b.localeCompare(a));
 // ['Юля', 'Олег', 'Катя', 'Вика', 'Борис', 'Андрей']
-const inReversedOrder = [...students].sort();
-console.log(inReversedOrder);
+// const inReversedOrder = [...students].sort();
+// console.log(inReversedOrder);
+
+
+// ============================map=====================
+
+
+const players = [
+  { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+  { name: "Poly", playtime: 469, gamesPlayed: 2 },
+  { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+  { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+];
+
+const userName = 'Poly'
+// const newPlayers = players.map(player => {
+// if (userName === player.name)
+//  return {...player,
+//    playtime: player.playtime + 123,
+//    gamesPlayed: player.gamesPlayed + 1,
+// }
+// return player;
+// })
+
+// тернарник=============================================
+// const newPlayers = players.map(player => userName === player.name ? {...player,
+//        playtime: player.playtime + 123,
+//        gamesPlayed: player.gamesPlayed + 1,
+//     } : player);
+
+// console.log(players);
+// console.log (newPlayers);
